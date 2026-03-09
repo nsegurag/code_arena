@@ -1,0 +1,27 @@
+[
+  {
+    "question": "¿Qué palabra se usa para crear una clase en Python?",
+    "options": ["class", "def", "object", "new"],
+    "correct": "class"
+  },
+  {
+    "question": "¿Qué estructura repite mientras una condición sea verdadera?",
+    "options": ["for", "if", "while", "switch"],
+    "correct": "while"
+  },
+  {
+    "question": "¿Qué tipo de dato es un diccionario en Python?",
+    "options": ["list", "tuple", "dict", "str"],
+    "correct": "dict"
+  },
+  {
+    "question": "¿Cuál de estas estructuras se usa para tomar decisiones?",
+    "options": ["if", "for", "print", "input"],
+    "correct": "if"
+  },
+  {
+    "question": "¿Qué función se usa para mostrar texto en pantalla en Python?",
+    "options": ["echo", "show", "print", "write"],
+    "correct": "print"
+  }
+]

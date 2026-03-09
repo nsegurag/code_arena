@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #8dd6e9 0%, #7bc8d9 35%, #9be26d 36%, #6dbf4b 100%);
+  color: #111827;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+/* Pantalla de inicio */
+.start-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.start-card {
+  width: 100%;
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 4px solid #1f2937;
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.start-card h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #1d4ed8;
+}
+
+.start-subtitle {
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+  color: #374151;
+}
+
+.start-description {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.start-buttons {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.menu-btn {
+  border: 2px solid #1f2937;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.menu-btn:hover {
+  transform: translateY(-2px);
+  background: #dbeafe;
+}
+
+.primary-btn {
+  background: #fde68a;
+}
+
+.primary-btn:hover {
+  background: #fcd34d;
+}
+
+.instructions-box {
+  margin-top: 10px;
+  padding: 16px;
+  border: 2px solid #1f2937;
+  border-radius: 14px;
+  background: #f8fafc;
+  text-align: left;
+}
+
+.instructions-box h3 {
+  margin-bottom: 10px;
+  color: #1d4ed8;
+}
+
+.instructions-box p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Pantalla de batalla */
+.battle-screen {
+  width: 100%;
+  max-width: 980px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 4px solid #1f2937;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  margin: 16px auto;
+}
+
+.battlefield {
+  padding: 20px 20px 8px;
+  min-height: 420px;
+  position: relative;
+}
+
+.enemy-zone,
+.player-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enemy-zone {
+  margin-bottom: 42px;
+}
+
+.player-zone {
+  margin-top: 60px;
+}
+
+.status-box {
+  width: 290px;
+  background: #f8fafc;
+  border: 3px solid #1f2937;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.status-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.status-box p {
+  margin-bottom: 6px;
+}
+
+.hp-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin: 8px 0 6px;
+}
+
+.hp-bar {
+  width: 100%;
+  height: 16px;
+  background: #d1d5db;
+  border: 2px solid #1f2937;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.hp-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 0.3s ease;
+}
+
+.enemy-fill {
+  background: linear-gradient(90deg, #ef4444, #f97316);
+}
+
+.player-extra {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.sprite {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #1f2937;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  user-select: none;
+}
+
+.enemy-sprite {
+  margin-right: 30px;
+}
+
+.player-sprite {
+  margin-left: 30px;
+}
+
+.ui-panel {
+  border-top: 4px solid #1f2937;
+  background: #e5e7eb;
+}
+
+.dialogue-box {
+  background: #f8fafc;
+  border-bottom: 3px solid #1f2937;
+  padding: 14px 16px;
+  min-height: 100px;
+}
+
+.dialogue-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #1d4ed8;
+}
+
+.dialogue-box p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.question-panel {
+  background: #ffffff;
+  border-bottom: 3px solid #1f2937;
+  padding: 14px 16px;
+}
+
+.question-panel h3 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.option-btn {
+  border: 2px solid #1f2937;
+  background: #dbeafe;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.option-btn:hover {
+  transform: translateY(-2px);
+  background: #bfdbfe;
+}
+
+.actions-panel {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 14px 16px;
+  background: #e5e7eb;
+}
+
+.action-btn {
+  border: 2px solid #1f2937;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  background: #dbeafe;
+}
+
+.start-btn {
+  background: #fde68a;
+}
+
+.start-btn:hover {
+  background: #fcd34d;
+}
+
+.hidden {
+  display: none;
+}
+
+.shake {
+  animation: shake 0.35s ease;
+}
+
+.flash-hit {
+  animation: flash-hit 0.35s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes flash-hit {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.6); }
+  100% { filter: brightness(1); }
+}
+
+@media (max-width: 900px) {
+  .battlefield {
+    min-height: auto;
+  }
+
+  .enemy-zone,
+  .player-zone {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .enemy-zone {
+    margin-bottom: 20px;
+  }
+
+  .player-zone {
+    margin-top: 20px;
+  }
+
+  .enemy-sprite,
+  .player-sprite {
+    margin: 0;
+  }
+
+  .status-box {
+    width: 100%;
+  }
+
+  .actions-panel {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .start-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .battlefield {
+    padding: 14px 14px 6px;
+  }
+
+  .sprite {
+    width: 110px;
+    height: 110px;
+    font-size: 3.2rem;
+  }
+
+  .player-extra {
+    grid-template-columns: 1fr;
+  }
+
+  .options-container {
+    grid-template-columns: 1fr;
+  }
+
+  .actions-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .dialogue-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

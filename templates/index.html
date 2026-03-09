@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Arena</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="start-screen" class="start-screen">
+      <div class="start-card">
+        <h1>Code Arena</h1>
+        <p class="start-subtitle">Batalla RPG de programación por turnos</p>
+
+        <div class="start-description">
+          <p>Demuestra tu lógica, derrota bugs y conviértete en el campeón de la arena.</p>
+        </div>
+
+        <div class="start-buttons">
+          <button id="enter-game-btn" class="menu-btn primary-btn">Entrar a la arena</button>
+          <button id="show-instructions-btn" class="menu-btn">Instrucciones</button>
+        </div>
+
+        <div id="instructions-box" class="instructions-box hidden">
+          <h3>Cómo jugar</h3>
+          <p>Responde preguntas de programación para atacar.</p>
+          <p>Si fallas, el enemigo contraataca.</p>
+          <p>Usa tus acciones para sobrevivir y derrotar a todos los enemigos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="battle-screen" class="battle-screen hidden">
+      <div class="battlefield">
+        <div class="enemy-zone">
+          <div class="status-box enemy-status">
+            <h2 id="enemy-name">Bug Junior</h2>
+            <p>Nivel <span id="enemy-level">1</span></p>
+            <div class="hp-line">
+              <span>HP</span>
+              <span><span id="enemy-health">50</span>/<span id="enemy-max-health">50</span></span>
+            </div>
+            <div class="hp-bar">
+              <div id="enemy-health-fill" class="hp-fill enemy-fill"></div>
+            </div>
+          </div>
+
+          <div class="sprite enemy-sprite">
+            <span>👾</span>
+          </div>
+        </div>
+
+        <div class="player-zone">
+          <div class="sprite player-sprite">
+            <span>🧙‍♂️</span>
+          </div>
+
+          <div class="status-box player-status">
+            <h2 id="player-name">Code Knight</h2>
+            <p>Nivel <span id="player-level">1</span></p>
+            <div class="hp-line">
+              <span>HP</span>
+              <span><span id="player-health">100</span>/<span id="player-max-health">100</span></span>
+            </div>
+            <div class="hp-bar">
+              <div id="player-health-fill" class="hp-fill"></div>
+            </div>
+
+            <div class="player-extra">
+              <p>ATQ: <span id="player-attack">20</span></p>
+              <p>EXP: <span id="player-exp">0</span>/30</p>
+              <p>Ronda: <span id="round-number">1</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="ui-panel">
+        <div class="dialogue-box">
+          <div class="dialogue-top">
+            <strong>Code Arena</strong>
+            <span id="game-status">Esperando inicio</span>
+          </div>
+          <p id="log-message">Bienvenido a la arena. Pulsa iniciar para comenzar.</p>
+        </div>
+
+        <div id="question-panel" class="question-panel hidden">
+          <h3 id="question-text">Aquí aparecerá la pregunta</h3>
+          <div id="options-container" class="options-container"></div>
+        </div>
+
+        <div id="actions-panel" class="actions-panel">
+          <button id="start-btn" class="action-btn start-btn">Iniciar</button>
+          <button id="attack-btn" class="action-btn">Atacar</button>
+          <button id="skill-btn" class="action-btn">Habilidad</button>
+          <button id="defend-btn" class="action-btn">Defender</button>
+          <button id="heal-btn" class="action-btn">Curar</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
