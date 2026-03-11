@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: code-arena
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 1 --threads 100 app:app
+    plan: free

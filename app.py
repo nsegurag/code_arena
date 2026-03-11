@@ -6,9 +6,13 @@ import random
 import string
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "code-arena-secret"
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "code-arena-secret")
 
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode="threading")
+socketio = SocketIO(
+    app,
+    cors_allowed_origins="*",
+    async_mode="threading"
+)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -87,7 +91,9 @@ def get_public_players(room_code):
                 "sid": player["sid"],
                 "name": player["name"],
                 "character": player["character"],
-                "className": CHARACTER_CONFIGS.get(player["character"], CHARACTER_CONFIGS["mage"])["className"],
+                "className": CHARACTER_CONFIGS.get(
+                    player["character"], CHARACTER_CONFIGS["mage"]
+                )["className"],
                 "is_host": player["sid"] == room["host_sid"],
             }
         )
@@ -117,6 +123,11 @@ def get_next_turn_sid(room, current_sid):
 @app.route("/")
 def index():
     return render_template("index.html")
+
+
+@app.route("/health")
+def health():
+    return jsonify({"status": "ok"}), 200
 
 
 @app.route("/api/questions")
@@ -472,4 +483,12 @@ def handle_disconnect():
 
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True, allow_unsafe_werkzeug=True)
+    port = int(os.environ.get("PORT", 5000))
+    debug_mode = os.environ.get("FLASK_DEBUG", "false").lower() == "true"
+    socketio.run(
+        app,
+        host="0.0.0.0",
+        port=port,
+        debug=debug_mode,
+        allow_unsafe_werkzeug=True
+    )
