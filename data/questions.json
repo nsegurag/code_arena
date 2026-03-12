@@ -1,27 +1,152 @@
 [
   {
-    "question": "¿Qué palabra se usa para crear una clase en Python?",
-    "options": ["class", "def", "object", "new"],
-    "correct": "class"
+    "question": "¿Qué valor implica decir siempre la verdad?",
+    "options": ["Respeto", "Honestidad", "Solidaridad", "Responsabilidad"],
+    "correct": "Honestidad"
   },
   {
-    "question": "¿Qué estructura repite mientras una condición sea verdadera?",
-    "options": ["for", "if", "while", "switch"],
-    "correct": "while"
+    "question": "¿Qué valor consiste en tratar bien a las demás personas?",
+    "options": ["Respeto", "Valentía", "Tolerancia", "Disciplina"],
+    "correct": "Respeto"
   },
   {
-    "question": "¿Qué tipo de dato es un diccionario en Python?",
-    "options": ["list", "tuple", "dict", "str"],
-    "correct": "dict"
+    "question": "¿Qué valor se demuestra al ayudar a alguien que lo necesita?",
+    "options": ["Paciencia", "Solidaridad", "Orden", "Honestidad"],
+    "correct": "Solidaridad"
   },
   {
-    "question": "¿Cuál de estas estructuras se usa para tomar decisiones?",
-    "options": ["if", "for", "print", "input"],
-    "correct": "if"
+    "question": "Cumplir con tareas y obligaciones demuestra:",
+    "options": ["Responsabilidad", "Amor", "Gratitud", "Perseverancia"],
+    "correct": "Responsabilidad"
   },
   {
-    "question": "¿Qué función se usa para mostrar texto en pantalla en Python?",
-    "options": ["echo", "show", "print", "write"],
-    "correct": "print"
+    "question": "Aceptar las diferencias de otras personas es:",
+    "options": ["Respeto", "Tolerancia", "Honestidad", "Valentía"],
+    "correct": "Tolerancia"
+  },
+  {
+    "question": "¿Qué valor se demuestra al agradecer algo recibido?",
+    "options": ["Gratitud", "Honestidad", "Justicia", "Amabilidad"],
+    "correct": "Gratitud"
+  },
+  {
+    "question": "Tratar a todos de manera justa refleja:",
+    "options": ["Justicia", "Amor", "Respeto", "Honestidad"],
+    "correct": "Justicia"
+  },
+  {
+    "question": "Seguir intentando a pesar de las dificultades demuestra:",
+    "options": ["Paciencia", "Perseverancia", "Tolerancia", "Solidaridad"],
+    "correct": "Perseverancia"
+  },
+  {
+    "question": "¿Qué valor implica escuchar a los demás con atención?",
+    "options": ["Respeto", "Valentía", "Responsabilidad", "Justicia"],
+    "correct": "Respeto"
+  },
+  {
+    "question": "¿Qué valor demuestra una persona que cumple sus promesas?",
+    "options": ["Amabilidad", "Responsabilidad", "Gratitud", "Paciencia"],
+    "correct": "Responsabilidad"
+  },
+  {
+    "question": "Compartir con otros lo que tienes demuestra:",
+    "options": ["Egoísmo", "Solidaridad", "Disciplina", "Valentía"],
+    "correct": "Solidaridad"
+  },
+  {
+    "question": "¿Qué valor se relaciona con actuar con bondad?",
+    "options": ["Amabilidad", "Honestidad", "Justicia", "Disciplina"],
+    "correct": "Amabilidad"
+  },
+  {
+    "question": "Esperar con calma algo que tarda muestra:",
+    "options": ["Valentía", "Paciencia", "Respeto", "Gratitud"],
+    "correct": "Paciencia"
+  },
+  {
+    "question": "¿Qué valor se demuestra al admitir un error?",
+    "options": ["Honestidad", "Justicia", "Disciplina", "Tolerancia"],
+    "correct": "Honestidad"
+  },
+  {
+    "question": "¿Qué valor se muestra al trabajar en equipo?",
+    "options": ["Individualismo", "Solidaridad", "Disciplina", "Orgullo"],
+    "correct": "Solidaridad"
+  },
+  {
+    "question": "¿Qué valor consiste en seguir reglas y normas?",
+    "options": ["Disciplina", "Amor", "Justicia", "Tolerancia"],
+    "correct": "Disciplina"
+  },
+  {
+    "question": "Defender lo que es correcto demuestra:",
+    "options": ["Valentía", "Gratitud", "Respeto", "Amabilidad"],
+    "correct": "Valentía"
+  },
+  {
+    "question": "Escuchar diferentes opiniones sin enojarse muestra:",
+    "options": ["Tolerancia", "Justicia", "Honestidad", "Responsabilidad"],
+    "correct": "Tolerancia"
+  },
+  {
+    "question": "¿Qué valor se demuestra al cuidar el medio ambiente?",
+    "options": ["Responsabilidad", "Amor", "Justicia", "Respeto"],
+    "correct": "Responsabilidad"
+  },
+  {
+    "question": "Decir la verdad aunque sea difícil muestra:",
+    "options": ["Honestidad", "Paciencia", "Disciplina", "Tolerancia"],
+    "correct": "Honestidad"
+  },
+  {
+    "question": "¿Qué valor implica ayudar sin esperar algo a cambio?",
+    "options": ["Solidaridad", "Justicia", "Disciplina", "Valentía"],
+    "correct": "Solidaridad"
+  },
+  {
+    "question": "¿Qué valor demuestra alguien que llega a tiempo?",
+    "options": ["Responsabilidad", "Amabilidad", "Gratitud", "Amor"],
+    "correct": "Responsabilidad"
+  },
+  {
+    "question": "Tratar a todos con educación demuestra:",
+    "options": ["Respeto", "Valentía", "Justicia", "Disciplina"],
+    "correct": "Respeto"
+  },
+  {
+    "question": "No rendirse ante un problema refleja:",
+    "options": ["Paciencia", "Perseverancia", "Gratitud", "Honestidad"],
+    "correct": "Perseverancia"
+  },
+  {
+    "question": "Reconocer el esfuerzo de otros demuestra:",
+    "options": ["Gratitud", "Justicia", "Disciplina", "Valentía"],
+    "correct": "Gratitud"
+  },
+  {
+    "question": "¿Qué valor se muestra al pedir perdón?",
+    "options": ["Honestidad", "Justicia", "Disciplina", "Paciencia"],
+    "correct": "Honestidad"
+  },
+  {
+    "question": "¿Qué valor refleja compartir responsabilidades en casa?",
+    "options": ["Responsabilidad", "Tolerancia", "Valentía", "Paciencia"],
+    "correct": "Responsabilidad"
+  },
+  {
+    "question": "Escuchar y comprender a otros demuestra:",
+    "options": ["Empatía", "Valentía", "Justicia", "Honestidad"],
+    "correct": "Empatía"
+  },
+  {
+    "question": "Defender a alguien que es tratado injustamente demuestra:",
+    "options": ["Valentía", "Paciencia", "Gratitud", "Disciplina"],
+    "correct": "Valentía"
+  },
+  {
+    "question": "Tratar a todos por igual demuestra:",
+    "options": ["Justicia", "Amor", "Honestidad", "Tolerancia"],
+    "correct": "Justicia"
   }
 ]
