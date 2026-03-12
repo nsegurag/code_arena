@@ -22,7 +22,7 @@ rooms = {}
 CHARACTER_CONFIGS = {
     "mage": {
         "className": "Programador",
-        "emoji": "👨🏻‍💻",
+        "emoji": "🧙‍♂️",
         "health": 100,
         "attack": 20,
         "skillName": "Código Crítico",
@@ -42,7 +42,7 @@ CHARACTER_CONFIGS = {
     },
     "assassin": {
         "className": "Hacker",
-        "emoji": "😈",
+        "emoji": "⚡",
         "health": 85,
         "attack": 25,
         "skillName": "Inyección Rápida",
